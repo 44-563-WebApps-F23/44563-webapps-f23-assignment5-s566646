@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Bootstrap Starter</title>
+  <title>My favorite cities</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
@@ -13,6 +13,20 @@
     integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
 </head>
   <body>
+    <nav class="navbar navbar-expand-md navbar-light bg-light">   
+      <div class="container-fluid">
+        <a class="navbar-brand" href="cities.html">A Few Cities</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#cityId" aria-controls="cityId" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="cityId">
+          <ul class="navbar-nav mr-auto">
+              <li class="nav-link active"><a href="basic.html">Basic</a></li>
+              <li class="nav-link active"><a href="advanced.html">Advanced</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
     <h1>
       Visit cities with srilatha
     </h1>
@@ -34,6 +48,150 @@
           <div class="col-md-2">arizona</div>
       </div>
     </div>
-    <p> Second row (plants row)Broke first this is to  letter row "col-sm-2" breakpoint is collapsed due to the column width of the text is greater than "col-md"</p>
-   </body>
+    <p> Second row (cities row)Broke first this is to  letter row "col-sm-2" breakpoint is collapsed due to the column width of the text is greater than "col-md"</p>
+    <div class="gallery">
+      
+      <img src="city1.jpg" class="img-fluid" alt="city1"width="400" height="400" ></a>      
+      <img src="city2.jpg" class="img-fluid" alt="city2"width="400" height="400"></a>
+      <img src="city3.jpg" class="img-fluid" alt="city3"width="400" height="400"></a>
+    
+  </div>  
+  <br>
+  <br>
+  <div class="Thumbnails">
+     <img src="city1.jpg" class="img-thumbnail"alt="city1" width="400" height="400"></a>
+      <img src="city2.jpg" class="img-thumbnail"alt="city2"width="400" height="400"></a>
+      <img src="city3.jpg" class="img-thumbnail"alt="city3" width="400" height="400"></a>
+  </div>
+  <br>
+  <h3> Table:</h3>
+    <table class="table table-hover table-bordered table-condensed table-sm caption-top text-center">
+      <caption>
+        Table with my last name elements
+      </caption>
+      <thead>
+        <tr class="table-primary">
+          <th scope="col">Letter</th>
+          <th scope="col">City</th>
+          <th scope="col">River</th>
+          <th scope="col">Tree</th>
+        </tr>
+      </thead>
+      <tbody> 
+          <tr class="text-danger">
+          <td scope="row">Y</td>
+          <td>York</td>
+          <td>Yochon</td>
+          <td>Yawddg</td>
+        </tr>
+        <tr class="text-info table-primary">
+          <td scope="row">A</td>
+          <td>Advin</td>
+          <td>Annex</td>
+          <td>Abaya</td>
+        </tr>
+        <tr class="text-primary">
+          <td Scope="row">D</td>
+          <td>Dune</td>
+          <td>Dardm</td>
+          <td>Darem</td>
+        </tr>
+        <tr class="text-danger table-primary">
+          <td scope="row">A</td>
+          <td>Aramark</td>
+          <td>Aroma</td>
+          <td>Adexs</td>
+        </tr>
+        <tr class="text-primary">
+          <td scope="row">L</td>
+          <td>Lincoln</td>
+          <td>Lamo</td>
+          <td>Lamer</td>
+        </tr>
+        <tr class="text-info table-primary">
+          <td scope="row">A</td>
+          <td>AmanaColonies</td>
+          <td>April</td>
+          <td>Awnem</td>
+        </tr>
+      </tbody>
+      </table>
+      <h2> Buttons:</h2>
+      <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button Letters">
+        <div class="btn-group me-2" role="group" aria-label="Buttons with Letters">
+          <button type="button" class="btn btn-success">Y</button>
+          <button type="button" class="btn btn-success">A</button>
+          <button type="button" class="btn btn-success">D</button>
+          <button type="button" class="btn btn-warning">A</button>
+          <button type="button" class="btn btn-warning">L</button>
+          <button type="button" class="btn btn-danger">A</button>
+        </div>
+      </div>
+      <br>
+      <h3> Dropdown:</h3>
+      <div class="btn-group" role="group">
+          <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+            Initial Letter
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="basic.html">Basic HTML Page</a></li>
+            <li><a class="dropdown-item" href="advanced.html">Advanced HTML Page</a></li>
+          </ul>
+      </div>
+      <br>
+      
+      <br>
+      <h3>Forms:</h3>
+      <form>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">City</label>
+            <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Enter your City">
+          </div>
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Sign up for newsletter?</label>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+      <br>
+      <h3> Bonus Cards: </h3>
+      <div class="row">
+        <div class="col-sm-3">
+        <div class="card" style="width: 18rem;">
+          <img src="city1.jpg" class="card-img-top" alt="Machilus">
+          <div class="card-body">
+            <h5 class="card-title">York</h5>
+            <p class="card-text">York City comprises 5 boroughs sitting where the Hudson River meets the Atlantic Ocean.it is big city</p>
+            <a href="city1.jpg" class="btn btn-success">York Image</a>
+          </div>
+        </div>
+        </div>
+        <div class="col-sm-3">
+        <div class="card" style="width: 18rem;">
+          <img src="city2.jpg" class="card-img-top" alt="Abelia">
+            <div class="card-body">
+              <h5 class="card-title">Advin</h5>
+              <p class="card-text">Advin is derived from a French rendering of the indigenous, it is known to botanists as Allium tricoccum.</p>
+              <a href="city2.jpg" class="btn btn-danger">Advin Image</a>
+            </div>
+          </div>
+          </div>
+          <div class="col-sm-3">
+          <div class="card" style="width: 18rem;">
+            <img src="city3.jpg" class="card-img-top" alt="Dune">
+              <div class="card-body">
+                <h5 class="card-title">Dune</h5>
+                <p class="card-text">Dune is major city with tourist attractions It is the eighth-most visited city in the U.S., with over two million visitors as of 2019.[14]. </p>
+                <a href="city3.jpg" class="btn btn-primary">Dune Image</a>
+              </div>
+          </div>
+          </div>
+          </div>
+
+  </body>
 </html>
